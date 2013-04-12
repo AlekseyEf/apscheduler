@@ -1,5 +1,6 @@
 # coding: utf-8
 import os.path
+from hive.apscheduler import apscheduler
 
 try:
     from setuptools import setup
@@ -8,9 +9,6 @@ try:
 except ImportError:
     from distutils.core import setup
     extras = {}
-
-import apscheduler
-
 
 here = os.path.dirname(__file__)
 readme_path = os.path.join(here, 'README.rst')
